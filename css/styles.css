@@ -266,30 +266,11 @@ color:#F89F9F;
 	background:#000;
 	top:0px;
 }
-.navbar-inverse {
-	background: transparent;
-}
-.navbar-inverse .navbar-toggle {
-	background-color: #FFDF00;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-/*background-color: #FFDF00;*/
- 
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #FFDF00;
-}
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-	color: #fff;
-}
-.navbar-inverse .navbar-toggle:hover .icon-bar {
-	background: #fff;
-}
-.navbar-toggle {
-}
+
 #home{ 
 background: rgb(34, 34, 34);
 }
+
 .hero-text {
 	color: #676e73;
 	width: 83%;
