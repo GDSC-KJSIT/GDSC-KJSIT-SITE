@@ -213,6 +213,14 @@ color: #1E4D02 !important;
 }
 .topHome {
 	position: fixed;
+	background: rgb(178, 180, 36);
+	border: 2px solid black;
+	width: 5rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	border-radius: 12px;
 	bottom: 20px;
 	right: 20px;
 	z-index: 5;
