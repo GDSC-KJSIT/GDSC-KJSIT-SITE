@@ -289,8 +289,7 @@ background: rgb(34, 34, 34);
 	margin-top: 50px;
 	border-bottom: 4px solid #FFDF00;
 }
-.carousel-inner > .item {
-}
+
 .carousel-caption {
 	padding: 0px;
 	bottom: 40%;
@@ -396,8 +395,7 @@ color: #000;
 	border-bottom: 2px solid #FFDF00;
 	border-radius: 0px;
 }
-.navbar-inverse .navbar-nav > .active {
-}
+
 .navbar-nav > li:hover > a {
 	color: #FFDF00;
 }
@@ -525,8 +523,7 @@ a.arrow-link:hover {
 .heading h2 {
 	color: #222;
 }
-#contactUs .heading h2 { 
-}
+
 .sub-heading {
 	padding: 15px 0;
 }
@@ -619,8 +616,6 @@ img, video, iframe, embed, object {
 .row .area2 {
 	width: 35%;
 }
-/* Services
-    -------------------------------------------------*/
 .grid .text-content {
 	padding-left: 35%;
 }
@@ -629,8 +624,7 @@ img, video, iframe, embed, object {
 	padding-left: 19%;
 	padding-right: 8%;
 }
-.grid .grid-item {
-}
+
 .grid .text-content h5 {
 	font-weight: bold;
 }
@@ -712,28 +706,31 @@ line-height: 26px;
 	padding: 5px;
 	position:relative;
 }
-.member-img:before {
-content: "";
-width: 80px;
-height: 80px;
-background: yellow;
-float: right;
-position: absolute;
-z-index: -1;
-top: -5px;
-right: 2px;
-}
-.member-img:after {
-content: "";
-width: 80px;
-height: 80px;
-background: yellow;
-float: right;
-position: absolute;
-z-index: -1;
-bottom: -5px;
-left: 2px;
-}
+@media (min-width: 1030px) {
+	.member-img:before {
+		content: "";
+		width: 80px;
+		height: 80px;
+		background: yellow;
+		float: right;
+		position: absolute;
+		z-index: -1;
+		top: -5px;
+		right: 2px;
+		}
+		.member-img:after {
+		content: "";
+		width: 80px;
+		height: 80px;
+		background: yellow;
+		float: right;
+		position: absolute;
+		z-index: -1;
+		bottom: -5px;
+		left: 2px;
+		}
+  }
+
 .team-member .member-img img {
     /* max-width: 250px; */
     /* margin: 0 auto; */
@@ -751,9 +748,7 @@ left: 2px;
 	margin: 0;
 	text-align: center;
 }
-.team-title{
 
-}
 .team-member .contact a {
 	padding: 0 8px;
 }
@@ -1060,9 +1055,6 @@ padding:88px 0 25px;
 .carousel-control{
 	display:none;
 }
-/*---------------*/
-/***** Bubba *****/
-/*---------------*/
 figure {
 position: relative;
 float: left;
@@ -1203,14 +1195,7 @@ figure.effect-bubba:hover a {
   height: 100%;
 }
 
-.item:nth-child(1) { 
-}
 
-.item:nth-child(2) { 
-}
-
-.item:nth-child(3) { 
-}
  
 @media (min-width: 768px) {
 .header .navbar-brand {
@@ -1287,12 +1272,7 @@ margin-top: 36px;
 	float: left;
 	margin: 0 3px 3px 0;
 	opacity: 1;
-	-webkit-transform: scale(1, 1);
-	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-duration: 250ms;
-	-moz-transform: scale(1, 1);
-	-moz-transition-timing-function: ease-out;
-	-moz-transition-duration: 250ms;
+	
 }
 .portfolio-item:hover .folio-info {
 	top: 0px;
@@ -1491,8 +1471,7 @@ nav#filter li {
 .form-group lable{
 	color:#4a4a4a !important;
 }
-.parlex-back .heading p { 
-}
+
 #clients {
 	background: #fff;
 }
