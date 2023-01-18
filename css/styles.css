@@ -720,10 +720,9 @@ line-height: 26px;
 }
 
 .team-member .member-img img {
-    /* max-width: 250px; */
-    /* margin: 0 auto; */
+    
     height: 25rem;
-    width: 30rem;
+    width: 25rem;
 }
 .team-member h4 {
 	font-size: 19px;
