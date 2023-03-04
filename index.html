@@ -40,7 +40,7 @@
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link active-link">About</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
                         <a href="#projects" class="nav__link">Events</a>
@@ -73,18 +73,13 @@
     <main class="main">
         <!-- ---Home--- -->
         <section class="home" id="home" >
-            <div class="home__container container grid">
-          <div class="wrapper">
-    <div class="static-txt">GDSC-KJSIT</div>
-    <ul class="dynamic-txts">
-      <li><span>Connect👨</span></li>
-      <li><span>Learn 🧾</span></li>
-      <li><span>Grow 📈</span></li>
-      <li><span>Build👨💻
-    </span></li>
-    </ul>
-  </div>
+            <div class="container1">
+                <p>GDSC-KJSIT <span class="typed-text"></span><span class="cursor1">&nbsp;</span></p>
+                <p style="font-size: 2.2rem;">Connect, Learn, Grow</p>
+    
+              
             </div>
+          
         </section>
 
         <!-- ---About--- -->
@@ -501,7 +496,71 @@
 
     <!-- -------------------------Main JS------------------------------------ -->
     <script src="js/main.js"></script>
-
+    <script>
+        // Acc
+            $(document).on("click", ".naccs .menu div", function() {
+            var numberIndex = $(this).index();
+    
+            if (!$(this).is("active")) {
+                $(".naccs .menu div").removeClass("active");
+                $(".naccs ul li").removeClass("active");
+    
+                $(this).addClass("active");
+                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+    
+                var listItemHeight = $(".naccs ul")
+                    .find("li:eq(" + numberIndex + ")")
+                    .innerHeight();
+                $(".naccs ul").height(listItemHeight + "px");
+                }
+            });
+    
+            // JS for SUmmarize your .tct/.vtt...
+            const typedTextSpan = document.querySelector(".typed-text");
+            const cursorSpan = document.querySelector(".cursor1");
+    
+            const textArray = [".txt file", ".docx file", ".pdf file", ".vtt file"];
+            const typingDelay = 150;
+            const erasingDelay = 100;
+            const newTextDelay = 1000; // Delay between current and next text
+            let textArrayIndex = 0;
+            let charIndex = 0;
+    
+            function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } 
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+            }
+    
+            function erase() {
+                if (charIndex > 0) {
+                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } 
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                setTimeout(type, typingDelay + 1100);
+            }
+            }
+    
+            document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+            if(textArray.length) setTimeout(type, newTextDelay + 250);
+            });
+        </script>
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+

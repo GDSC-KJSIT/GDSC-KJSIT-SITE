@@ -301,6 +301,12 @@ body.dark-theme {
 }
 
 /* -------------Home--------------- */
+#home{
+  background: url("../images/bgimg.png");
+  background-repeat: no-repeat;
+  margin-top: 12rem;
+  background-size: 100% 100%;
+}
 .home__container {
   position: relative;
   row-gap: 2.5rem;
