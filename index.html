@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="images/mslogo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/contact.css">
 
     <!--=============== BOXICONS ===============-->
@@ -80,7 +79,8 @@
             </div>          
         </section>
         <div class="register_btn">
-            <button class="button home_button">Join Us</button>
+            <a href="https://gdsc.community.dev/k-j-somaiya-institute-of-engineering-and-information-technology-mumbai/">
+            <button class="button home_button">Join Us</button></a>
         </div>
 
         <!-- ---About--- -->
@@ -506,70 +506,7 @@
 
     <!-- -------------------------Main JS------------------------------------ -->
     <script src="js/main.js"></script>
-    <script>
-        // Acc
-            $(document).on("click", ".naccs .menu div", function() {
-            var numberIndex = $(this).index();
-    
-            if (!$(this).is("active")) {
-                $(".naccs .menu div").removeClass("active");
-                $(".naccs ul li").removeClass("active");
-    
-                $(this).addClass("active");
-                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-    
-                var listItemHeight = $(".naccs ul")
-                    .find("li:eq(" + numberIndex + ")")
-                    .innerHeight();
-                $(".naccs ul").height(listItemHeight + "px");
-                }
-            });
-    
-            // JS for SUmmarize your .tct/.vtt...
-            const typedTextSpan = document.querySelector(".typed-text");
-            const cursorSpan = document.querySelector(".cursor1");
-    
-            const textArray = [".txt file", ".docx file", ".pdf file", ".vtt file"];
-            const typingDelay = 150;
-            const erasingDelay = 100;
-            const newTextDelay = 1000; // Delay between current and next text
-            let textArrayIndex = 0;
-            let charIndex = 0;
-    
-            function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } 
-            else {
-                cursorSpan.classList.remove("typing");
-                setTimeout(erase, newTextDelay);
-            }
-            }
-    
-            function erase() {
-                if (charIndex > 0) {
-                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } 
-            else {
-                cursorSpan.classList.remove("typing");
-                textArrayIndex++;
-                if(textArrayIndex>=textArray.length) textArrayIndex=0;
-                setTimeout(type, typingDelay + 1100);
-            }
-            }
-    
-            document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-            if(textArray.length) setTimeout(type, newTextDelay + 250);
-            });
-        </script>
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
