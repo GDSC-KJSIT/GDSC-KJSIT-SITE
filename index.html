@@ -243,7 +243,7 @@
                         
                         </div>
                       </div>
-                    <button class="button projects__button">Speaker : Pruthviaj Patil</button>
+                    <button class="button projects__button">Speaker : Kunal Thakkar & Pruthviaj Patil</button>
                 </article>
                 
                 <article class="projects__card">
@@ -270,7 +270,35 @@
                         
                         </div>
                       </div>
-                    <button class="button projects__button"></button>
+                    <button class="button projects__button">
+                        Speaker : Manasvi Shetty
+                    </button>
+                </article>
+                   
+                <article class="projects__card">
+
+                    <div class="projects__data">
+                        <h3 class="projects__title">Flutter Forward </h3>
+                    </div>
+                    <div class="slider">
+  
+                        <!-- <a href="#slide-1">1</a>
+                        <a href="#slide-2">2</a>
+                        <a href="#slide-3">3</a> -->
+                        
+                      
+                        <div class="slides">
+                          <div id="slide-1">
+                            <img src="/images/fluter.jpeg" alt="">
+                          </div>
+                         
+                    
+                        
+                        </div>
+                      </div>
+                    <button class="button projects__button">
+                        Speaker : Viren Joshi
+                    </button>
                 </article>
             </div>
             <br>
@@ -281,39 +309,17 @@
              </h2>
  
              <div class="projects__container grid">
+                
                  <article class="projects__card">
  
                      <div class="projects__data">
-                         <h3 class="projects__title">Flutter Sessions</h3>
+                         <h3 class="projects__title">Decoding DSA</h3>
                      </div>
-                     <img src="./images/fluter.jpeg" alt="">
-                     <a href="https://gdsc.community.dev/events/details/developer-student-clubs-k-j-somaiya-institute-of-engineering-and-information-technology-mumbai-presents-flutter-forward-session/">
-                        <button class="button projects__button">
+                     <img src="./images/dsa.png" alt="">
+        
                     
-                            Book RSVP here</button>
-                     </a>
-            
-                 </article>
- 
-                 <article class="projects__card">
- 
- 
-                     <div class="projects__data">
-                         <h3 class="projects__title">Angular + Web</h3>
-                     </div>
-                     <img src="./images/angular.png" alt="">
- 
-                     <button class="button projects__button">Learn more</button>
-                 </article>
- 
-                 <article class="projects__card">
- 
-                     <div class="projects__data">
-                         <h3 class="projects__title">Competitive Progamming Sessions + Contests</h3>
-                     </div>
-                     <img src="./images/cpimg.png" alt="">
-                     
-                     <button class="button projects__button">Learn more</button>
+                        <a href="http://bit.ly/45GsKnk">  <button class="button projects__button">Book RSVP here</button></a>
+                      
                  </article>
              </div>
         </section>
@@ -375,6 +381,7 @@
 
 
     </main>
+    <form action="https://formspree.io/f/moqrvnaa" method="POST">
         <section id="contact">
             <h2 class="section__title roles">
                 Contact Us
@@ -387,35 +394,37 @@
                 <div class="row input-container">
                         <div class="col-xs-12">
                             <div class="styled-input wide">
-                                <input type="text" required />
+                                <input type="text" name="Name" required />
                                 <label>Name</label> 
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="styled-input">
-                                <input type="text" required />
+                                <input type="email" name="email" required />
                                 <label>Email</label> 
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="styled-input" style="float:right;">
-                                <input type="text" required />
+                                <input type="number" name="Phone number" required />
                                 <label>Phone Number</label> 
                             </div>
                         </div>
                         <div class="col-xs-12">
                             <div class="styled-input wide">
-                                <textarea required></textarea>
+                                <textarea name="message" required></textarea>
                                 <label>Message</label>
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <div class="btn-lrg submit-btn">Send Message</div>
+                            <button class="btn-lrg submit-btn" type="submit">Send Message</button>
+                            <!-- <div class="btn-lrg submit-btn"></div> -->
                         </div>
                 </div>
             </div>
             
         </section>
+    </form>
     <!-- ----------------------Footer ---------------------------->
     <footer class="footer section" id="" class="hidden">
         <div class="footer__container container grid">
